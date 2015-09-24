@@ -114,3 +114,9 @@ if '{{ cookiecutter.use_celery }}'.lower() == 'n':
 
 # 3. Copy files from /docs/ to {{ cookiecutter.repo_name }}/docs/
 # copy_doc_files(PROJECT_DIRECTORY)
+
+if '{{cookiecutter.use_pycharm}}' != 'y':
+    shutil.rmtree(os.path.join(PROJECT_DIRECTORY, '.idea/'))
+
+docker_private_key = 'compose/debug/keys_to_docker/id_rsa'
+os.chmod(os.path.join(PROJECT_DIRECTORY, docker_private_key), 0600)

@@ -14,5 +14,6 @@
     "use_maildump": "n",
     "use_sentry": "n",
     "windows": "n",
-    "use_python2": "n"
+    "use_python2": "n",
+    "use_pycharm": "n"
 }

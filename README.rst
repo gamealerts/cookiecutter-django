@@ -36,8 +36,9 @@ Features
 * Pre configured Celery_ (optional)
 * Integration with Maildump_ for local email testing (optional)
 * Integration with Sentry_ for error logging (optional)
-* Docker support using docker-compose_ for dev and prod
 * Procfile_ for deploying to Heroku
+* Docker support using docker-compose_ for dev (with debug) and prod (optional)
+* PyCharm "Run/Debug Configurations" for django, grunt and docker (optional)
 
 .. _alpha: http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/
 .. _Hitch: https://github.com/hitchtest/hitchtest

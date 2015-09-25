@@ -10,7 +10,18 @@ django:
   command: python /app/manage.py runserver_plus 0.0.0.0:8000
   volumes:
     - .:/app
+    - /usr/local/lib
   ports:
     - "8000:8000"
   links:
     - postgres
+
+debug:
+  build: ./compose/debug/
+  ports:
+   - "8001:8000"
+   - "2222:22"
+  volumes_from:
+   - django
+  links:
+   - postgres
